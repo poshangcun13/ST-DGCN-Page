@@ -265,8 +265,7 @@ src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.24/dist/js/bulma-carousel.m
           </div>
 
           <div class="method-text">
-            Schematic diagram of the overall architecture of the DCLT framework,
-            illustrating the unified differentiable structure learning and global modeling paradigm.
+            As shown in Figure 1, the proposed model is primarily composed of four cascaded core modules: a shallow multi-feature domain projection module, a spatio-temporal decoupled attention encoder (STIA), a cross-gated topological fusion module, and a global classification head.
           </div>
 
         </div>
@@ -288,8 +287,7 @@ src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.24/dist/js/bulma-carousel.m
           </div>
 
           <div class="method-text">
-            Real-world EEG data acquisition environment and edge-oriented deployment
-            validation involving 23 subjects.
+            To intuitively and visually further analyze the deep discriminative feature representation capability of STIA-CGNet in large-scale subject scenarios, this section employs the t-SNE (t-Distributed Stochastic Neighbor Embedding) algorithm.
           </div>
 
         </div>
@@ -311,8 +309,7 @@ src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.24/dist/js/bulma-carousel.m
           </div>
 
           <div class="method-text">
-            Performance consistency evolution between dynamic routing and global
-            static subsets under varying channel budgets.
+            Figure 3 illustrates the two-dimensional heatmap distributions across four independent brainprint recognition tasks. The results clearly reveal a non-uniform adaptive frequency-band selectivity, where the information transmission coefficients of different physiological bands exhibit a markedly heterogeneous distribution across all tasks.
           </div>
 
         </div>
@@ -539,9 +536,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     <div class="content has-text-justified">
       <p>
-        The following tables present the quantitative performance of our proposed
-        DCLT framework compared to state-of-the-art baselines across multiple
-        datasets and varying channel budget configurations.
+        To comprehensively evaluate the representational performance of the proposed STIA-CGNet, this section introduces nine state-of-the-art (SOTA) baseline models in the EEG representation field for quantitative comparison.
       </p>
     </div>
 
@@ -554,8 +549,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="box mt-5">
 
           <h3 class="title is-5 has-text-centered">
-            Table I: Brainprint Recognition Performance on the PhysioNet MI Dataset
-            (64 vs. 16 Channels)
+            Table 1 shows the performance of different models on the PhysioNet MI dataset under a large-scale 109-subject classification setting.
           </h3>
 
           <div class="table-image-container">
@@ -576,7 +570,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="box mt-5">
 
           <h3 class="title is-5 has-text-centered">
-            Table II: Random vs. DCLT-Selected 16-Channel Subsets on the PhysioNet MI Dataset
+            Table 2: Comparison of recognition performance of different models on cross-state emotion datasets (%).
           </h3>
 
           <div class="table-image-container">
@@ -597,7 +591,7 @@ document.addEventListener('DOMContentLoaded', function () {
         <div class="box mt-5">
 
           <h3 class="title is-5 has-text-centered">
-            Table III: Performance on DEAP (32 vs. 8 Channels) and AMIGOS (14 vs. 7 Channels) Datasets
+            Table 3: Ablation study results and analysis of core components.
           </h3>
 
           <div class="table-image-container">
