@@ -104,7 +104,7 @@
     "url": "https://YOUR_DOMAIN.com/DCLT-project",
     "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
     "keywords": ["EEG", "Brainprint Recognition", "Channel Selection", "Vision Transformer", "STE", "Edge Deployment"],
-    "abstract": "High-precision Electroencephalogram (EEG) analysis typically relies on dense multi-channel arrays, creating a fundamental conflict with the strict low-channel and low-power budgets of Internet of Things (IoT) edge devices. This bottleneck severely hinders the practical deployment of emerging wearable Brainprint Authentication systems. To address these challenges, we propose the Dynamic Channel Learning Transformer (DCLT), a unified framework formulating EEG channel selection as Differentiable Structure Learning tailored for IoT-based brainprint recognition.",
+    "abstract": "Electroencephalogram (EEG)-based brainprint recognition possesses significant security value; however, existing recognition methods face bottlenecks, including insufficient identification capacity for large-scale populations and interference from cross-cognitive or emotional states. To address these issues, this paper proposes an end-to-end Spatio-Temporal Dynamic Graph Convolutional Network (ST-DGCN) for robust EEG biometric authentication. First, the network adaptively infers the dynamic functional connectivity topology through a differentiable dynamic brain graph inference module to eliminate artifact interference from the individual's real-time mental states. Subsequently, a spatio-temporal dynamic graph convolution is utilized to jointly model the spatial topological manifold and the temporal dynamic evolution features of the EEG signals. Finally, a covariance energy pooling module is constructed to extract the second-order statistical energy distribution across channels, thereby building a deep discriminative representation with high statistical stability. Experiments conducted on three public datasets with different task paradigms—PhysioNet MI (a large-scale cohort of 109 subjects), DEAP, and AMIGOS (involving cross-state scenarios and low-SNR edge devices)—demonstrate that the performance of ST-DGCN significantly outperforms existing state-of-the-art methods. It achieves a peak accuracy of 99.59% in large-scale population tasks, providing an effective approach for constructing highly robust and secure next-generation brainprint authentication systems.",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/"
   }
@@ -265,7 +265,7 @@ src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.24/dist/js/bulma-carousel.m
           </div>
 
           <div class="method-text">
-            As shown in Figure 1, the proposed model is primarily composed of four cascaded core modules: a shallow multi-feature domain projection module, a spatio-temporal decoupled attention encoder (STIA), a cross-gated topological fusion module, and a global classification head.
+            This figure illustrates the proposed end-to-end Spatio-Temporal Dynamic Graph Convolutional Network (ST-DGCN) for EEG-based identity authentication.
           </div>
 
         </div>
@@ -287,7 +287,7 @@ src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.24/dist/js/bulma-carousel.m
           </div>
 
           <div class="method-text">
-            To intuitively and visually further analyze the deep discriminative feature representation capability of STIA-CGNet in large-scale subject scenarios, this section employs the t-SNE (t-Distributed Stochastic Neighbor Embedding) algorithm.
+            Visualization of dynamic functional connectivity and covariance energy distributions. (a) Dynamic functional connectivity matrix of Subject 0. (b) Dynamic functional connectivity matrix of Subject 1. The color intensity represents the strength of functional connectivity between EEG channels. (c) Covariance energy topographic map of Subject 0 obtained from the Covariance Energy Pooling (CEP) module. (d) Covariance energy topographic map of Subject 1. Warmer colors indicate higher energy concentrations, whereas cooler colors represent lower energy levels.
           </div>
 
         </div>
@@ -309,7 +309,7 @@ src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.24/dist/js/bulma-carousel.m
           </div>
 
           <div class="method-text">
-            Figure 3 illustrates the two-dimensional heatmap distributions across four independent brainprint recognition tasks. The results clearly reveal a non-uniform adaptive frequency-band selectivity, where the information transmission coefficients of different physiological bands exhibit a markedly heterogeneous distribution across all tasks.
+            t-SNE visualization of the global feature representation F_global learned by ST-DGCN.
           </div>
 
         </div>
